@@ -8,9 +8,52 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State private var isDarkMode = false
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        ZStack {
+            BackgroundView(isDarkMode: $isDarkMode)
+            VStack {
+                CityTextView(cityName: "Cupertino, CA")
+                
+                MainWeatherView(imageName: isDarkMode ? "moon.stars.fill" : "cloud.sun.fill",
+                                temperature: 78)
+                
+                HStack(spacing: 20) {
+                    WeatherDayView(dayOfWeek: "TUE",
+                               imageName: "cloud.sun.fill",
+                               temperature: 74)
+                    
+                    WeatherDayView(dayOfWeek: "WED",
+                               imageName: "sun.max.fill",
+                               temperature: 88)
+                    
+                    WeatherDayView(dayOfWeek: "THU",
+                               imageName: "wind.snow",
+                               temperature: 55)
+                    
+                    WeatherDayView(dayOfWeek: "FRI",
+                               imageName: "sunset.fill",
+                               temperature: 60)
+                    
+                    WeatherDayView(dayOfWeek: "SAT",
+                               imageName: "snow",
+                               temperature: -5)
+                }
+                Spacer()
+                
+                Button {
+                    isDarkMode.toggle()
+                } label: {
+                    WeatherButton(title: "Change Day Time",
+                                  textColor: self.isDarkMode ? .gray : .blue,
+                                  backgroundColor: .white)
+                }
+                
+                Spacer()
+            }
+        }
     }
 }
 

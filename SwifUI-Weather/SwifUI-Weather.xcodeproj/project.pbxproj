@@ -11,6 +11,11 @@
 		006E0C8027289281002566FE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006E0C7F27289281002566FE /* ContentView.swift */; };
 		006E0C8227289289002566FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 006E0C8127289289002566FE /* Assets.xcassets */; };
 		006E0C8527289289002566FE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 006E0C8427289289002566FE /* Preview Assets.xcassets */; };
+		006E0C8D2728C2B3002566FE /* WeatherDayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006E0C8C2728C2B3002566FE /* WeatherDayView.swift */; };
+		006E0C8F2728CF4B002566FE /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006E0C8E2728CF4B002566FE /* BackgroundView.swift */; };
+		006E0C912728D17F002566FE /* CityTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006E0C902728D17F002566FE /* CityTextView.swift */; };
+		006E0C932728D2A3002566FE /* MainWeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006E0C922728D2A3002566FE /* MainWeatherView.swift */; };
+		006E0C952728D4BE002566FE /* WeatherButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006E0C942728D4BE002566FE /* WeatherButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,11 @@
 		006E0C7F27289281002566FE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		006E0C8127289289002566FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		006E0C8427289289002566FE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		006E0C8C2728C2B3002566FE /* WeatherDayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDayView.swift; sourceTree = "<group>"; };
+		006E0C8E2728CF4B002566FE /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
+		006E0C902728D17F002566FE /* CityTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityTextView.swift; sourceTree = "<group>"; };
+		006E0C922728D2A3002566FE /* MainWeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWeatherView.swift; sourceTree = "<group>"; };
+		006E0C942728D4BE002566FE /* WeatherButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +61,7 @@
 		006E0C7C27289281002566FE /* SwifUI-Weather */ = {
 			isa = PBXGroup;
 			children = (
+				006E0C8B2728C28D002566FE /* Views */,
 				006E0C7D27289281002566FE /* SwifUI_WeatherApp.swift */,
 				006E0C7F27289281002566FE /* ContentView.swift */,
 				006E0C8127289289002566FE /* Assets.xcassets */,
@@ -65,6 +76,18 @@
 				006E0C8427289289002566FE /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		006E0C8B2728C28D002566FE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				006E0C8C2728C2B3002566FE /* WeatherDayView.swift */,
+				006E0C942728D4BE002566FE /* WeatherButton.swift */,
+				006E0C922728D2A3002566FE /* MainWeatherView.swift */,
+				006E0C902728D17F002566FE /* CityTextView.swift */,
+				006E0C8E2728CF4B002566FE /* BackgroundView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +161,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				006E0C8027289281002566FE /* ContentView.swift in Sources */,
+				006E0C952728D4BE002566FE /* WeatherButton.swift in Sources */,
+				006E0C912728D17F002566FE /* CityTextView.swift in Sources */,
+				006E0C932728D2A3002566FE /* MainWeatherView.swift in Sources */,
 				006E0C7E27289281002566FE /* SwifUI_WeatherApp.swift in Sources */,
+				006E0C8F2728CF4B002566FE /* BackgroundView.swift in Sources */,
+				006E0C8D2728C2B3002566FE /* WeatherDayView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
